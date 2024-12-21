@@ -3,137 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Moderna</title>
+    <title>Blog - Pedro Sobral</title>
     <style>
-        /* Reset Básico */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
+            background-color: #ffffff;
+            color: #333333;
         }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background: #f9f9f9;
-        }
-
-        section {
-            padding: 60px 20px;
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
-            position: relative;
         }
-
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #333;
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
-
-        section p {
-            max-width: 600px;
-            margin: 0 auto 20px;
-            color: #666;
-            line-height: 1.8;
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
-
+        article {
+            margin-bottom: 40px;
+        }
+        article h2 {
+            color: #007bff;
+            font-size: 1.8em;
+        }
+        article p {
+            color: #666666;
+            line-height: 1.6;
+        }
         .btn {
             display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
             padding: 10px 20px;
-            background: #007bff;
-            color: #fff;
+            border-radius: 5px;
             text-decoration: none;
-            border-radius: 25px;
-            transition: background 0.3s ease;
+            transition: background-color 0.3s;
         }
-
         .btn:hover {
-            background: #0056b3;
+            background-color: #0056b3;
         }
-
-        /* Camada 1 */
-        .layer1 {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
+        footer {
+            background-color: #f8f9fa;
+            color: #666666;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
-
-        /* Camada 2 */
-        .layer2 {
-            background: #f9f9f9;
-            color: #333;
-        }
-
-        /* Divisor */
-        .divider {
-            height: 100px;
-            overflow: hidden;
-        }
-
-        .divider svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 100px;
-        }
-
-        .divider .wave {
-            fill: #fff;
-        }
-
-        /* Camada 3 */
-        .layer3 {
-            background: linear-gradient(135deg, #ff758c, #ff7eb3);
-            color: #fff;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            section h2 {
-                font-size: 1.5rem;
+        @media (max-width: 600px) {
+            main {
+                padding: 0 10px;
             }
-
-            .btn {
-                padding: 8px 16px;
-                font-size: 0.9rem;
+            nav a {
+                display: block;
+                margin: 10px 0;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Camada 1 -->
-    <section class="layer1">
-        <h2>Bem-vindo à Sua Solução Digital</h2>
-        <p>Descubra como transformar visitantes em clientes com nossas estratégias inovadoras de marketing.</p>
-        <a href="#servicos" class="btn">Saiba Mais</a>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path class="wave" fill="#f9f9f9" d="M0,288L48,288C96,288,192,288,288,272C384,256,480,224,576,192C672,160,768,128,864,106.7C960,85,1056,75,1152,74.7C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </div>
-
-    <!-- Camada 2 -->
-    <section class="layer2" id="servicos">
-        <h2>Nossos Serviços</h2>
-        <p>Oferecemos estratégias personalizadas para negócios locais, garantindo resultados mensuráveis e impactantes.</p>
-        <a href="#contato" class="btn">Entre em Contato</a>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path class="wave" fill="#ff758c" d="M0,160L48,160C96,160,192,160,288,165.3C384,171,480,181,576,192C672,203,768,213,864,192C960,171,1056,117,1152,117.3C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </div>
-
-    <!-- Camada 3 -->
-    <section class="layer3" id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para descobrir como podemos ajudar seu negócio a crescer.</p>
-        <a href="#top" class="btn">Voltar ao Topo</a>
-    </section>
+    <header>
+        <h1>Blog do Pedro Sobral</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Artigos</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Os 7 erros comuns em campanhas de tráfego pago (e como evitá-los)</h2>
+            <p>Publicado em 16 de dezembro de 2024</p>
+            <p>Descubra quais são os erros mais frequentes em campanhas de tráfego pago e aprenda como evitá-los para maximizar seus resultados.</p>
+            <a href="#" class="btn">Leia mais</a>
+        </article>
+        <article>
+            <h2>Tráfego Pago: O guia completo para começar e ter resultados rápidos</h2>
+            <p>Publicado em 9 de dezembro de 2024</p>
+            <p>Um guia detalhado para iniciantes no tráfego pago que desejam obter resultados rápidos e eficazes.</p>
+            <a href="#" class="btn">Leia mais</a>
+        </article>
+        <!-- Adicione mais artigos conforme necessário -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Pedro Sobral. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
