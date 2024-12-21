@@ -1,102 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Pedro Sobral</title>
+    <title>Landing Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
-            color: #333333;
         }
-        header {
-            background-color: #007bff;
-            color: #ffffff;
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            text-align: center;
         }
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        article {
+
+        .layer {
             margin-bottom: 40px;
         }
-        article h2 {
-            color: #007bff;
-            font-size: 1.8em;
+
+        .layer img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
-        article p {
-            color: #666666;
-            line-height: 1.6;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            background-color: #f8f9fa;
-            color: #666666;
+
+        .header {
             text-align: center;
+            background-color: #f4f4f4;
             padding: 20px;
-            margin-top: 40px;
         }
-        @media (max-width: 600px) {
-            main {
-                padding: 0 10px;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
+
+        .header h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        .client-feedback {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .feedback-item {
+            text-align: center;
+            flex: 1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        form button:hover {
+            background-color: #218838;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Blog do Pedro Sobral</h1>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Artigos</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h2>Os 7 erros comuns em campanhas de tráfego pago (e como evitá-los)</h2>
-            <p>Publicado em 16 de dezembro de 2024</p>
-            <p>Descubra quais são os erros mais frequentes em campanhas de tráfego pago e aprenda como evitá-los para maximizar seus resultados.</p>
-            <a href="#" class="btn">Leia mais</a>
-        </article>
-        <article>
-            <h2>Tráfego Pago: O guia completo para começar e ter resultados rápidos</h2>
-            <p>Publicado em 9 de dezembro de 2024</p>
-            <p>Um guia detalhado para iniciantes no tráfego pago que desejam obter resultados rápidos e eficazes.</p>
-            <a href="#" class="btn">Leia mais</a>
-        </article>
-        <!-- Adicione mais artigos conforme necessário -->
-    </main>
-    <footer>
-        <p>&copy; 2024 Pedro Sobral. Todos os direitos reservados.</p>
-    </footer>
+
+    <div class="container">
+
+        <!-- 1ª Camada -->
+        <div class="layer header">
+            <h1>Tenha Resultados Imediatos com Gestão de Tráfego</h1>
+            <img src="foto1.png" alt="Imagem de Gestão de Tráfego">
+        </div>
+
+        <!-- 2ª Camada -->
+        <div class="layer client-feedback">
+            <div class="feedback-item">
+                <img src="foto2.png" alt="Foto Cliente 1">
+                <p>"Ótimo serviço! Tivemos um crescimento incrível."</p>
+            </div>
+            <div class="feedback-item">
+                <img src="foto3.png" alt="Foto Cliente 2">
+                <p>"Resultados acima do esperado. Recomendo!"</p>
+            </div>
+            <div class="feedback-item">
+                <img src="foto4.png" alt="Foto Cliente 3">
+                <p>"Estratégias que realmente funcionam. Muito obrigado!"</p>
+            </div>
+        </div>
+
+        <!-- 3ª Camada -->
+        <div class="layer">
+            <iframe src="https://www.youtube.com/embed/bJoi2G15QpA?autoplay=1&mute=0" allow="autoplay"></iframe>
+        </div>
+
+        <!-- 4ª Camada -->
+        <div class="layer">
+            <form>
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- 5ª Camada -->
+        <div class="layer">
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+    <script>
+        function initMap() {
+            const location = { lat: -19.9766, lng: -44.1986 }; // Coordenadas do Parque das Cachoeiras Cristais
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
 </body>
 </html>
