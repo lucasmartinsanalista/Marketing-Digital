@@ -1,187 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Innovadora</title>
+    <title>Tráfego Pago e Estratégias Locais</title>
     <style>
-        :root {
-            --primary-color: #ff6f61;
-            --secondary-color: #4a90e2;
-            --text-light: #ffffff;
-            --text-dark: #333333;
-        }
-
         body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #ff6f61, #4a90e2);
-            color: var(--text-light);
-            overflow-x: hidden;
-        }
-
-        /* Gradiente de fondo animado */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
-            animation: pulse 6s infinite;
-            z-index: -1;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 0.4;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.8;
-                transform: scale(1.1);
-            }
-        }
-
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-        }
-
-        .btn {
-            padding: 15px 30px;
-            background: var(--primary-color);
-            color: var(--text-light);
-            font-size: 1rem;
-            text-transform: uppercase;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 50px 20px;
-            background: #ffffff;
-            color: var(--text-dark);
-        }
-
-        .card {
-            background: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
-            color: var(--text-light);
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            width: 300px;
+            font-family: Arial, sans-serif;
             margin: 20px;
-            overflow: hidden;
-            transition: transform 0.4s ease;
+            background-color: #f9f9f9;
+            color: #333;
         }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card img {
-            width: 100%;
-            border-bottom: 5px solid var(--text-light);
-        }
-
-        .card-content {
-            padding: 20px;
+        h1, h2 {
             text-align: center;
+            color: #333;
         }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: var(--secondary-color);
-            color: var(--text-light);
+        .section {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #fff;
         }
-
-        /* Responsividad */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            .card {
-                width: 90%;
-            }
+        .section h2 {
+            color: #007bff;
         }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a la Innovación</h1>
-        <p>Explora un diseño moderno, interactivo y atractivo.</p>
-        <button class="btn">Descubre Más</button>
-    </header>
+    <h1>Estratégias de Marketing Digital</h1>
 
-    <section>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Ejemplo">
-            <div class="card-content">
-                <h3>Título Atractivo</h3>
-                <p>Descripción breve sobre este tema.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Ejemplo">
-            <div class="card-content">
-                <h3>Título Atractivo</h3>
-                <p>Descripción breve sobre este tema.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Ejemplo">
-            <div class="card-content">
-                <h3>Título Atractivo</h3>
-                <p>Descripción breve sobre este tema.</p>
-            </div>
-        </div>
-    </section>
+    <div class="section">
+        <h2>Tráfego Pago para Negócios Locais</h2>
+        <p>O tráfego pago é uma estratégia essencial para atrair clientes e aumentar a visibilidade de negócios locais. Campanhas bem estruturadas podem gerar resultados rápidos e mensuráveis, garantindo que seu público-alvo veja sua oferta no momento certo.</p>
+        <ul>
+            <li>Utilize anúncios no <span class="highlight">Google Ads</span> para aparecer em pesquisas relacionadas ao seu negócio.</li>
+            <li>Aproveite as plataformas de redes sociais, como o <span class="highlight">Facebook</span> e o <span class="highlight">Instagram</span>, para alcançar usuários próximos à sua localização.</li>
+            <li>Inclua promoções ou ofertas exclusivas nos seus anúncios para atrair mais engajamento.</li>
+        </ul>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Innovación Web. Todos los derechos reservados.</p>
-    </footer>
+    <div class="section">
+        <h2>Benefícios do Tráfego Pago</h2>
+        <ul>
+            <li><strong>Resultados rápidos:</strong> Diferente de estratégias orgânicas, o tráfego pago pode gerar leads e vendas imediatamente.</li>
+            <li><strong>Segmentação precisa:</strong> Você pode direcionar seus anúncios para públicos específicos com base em localização, idade, interesses e comportamento.</li>
+            <li><strong>Medição de resultados:</strong> Plataformas como Google Ads e Meta Ads oferecem dados detalhados sobre o desempenho das campanhas.</li>
+            <li><strong>Aumento da visibilidade:</strong> Apareça na frente de potenciais clientes mesmo que sua marca ainda seja pouco conhecida.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Landing Page de Alta Conversão</h2>
+        <p>Uma landing page eficaz é fundamental para converter visitantes em leads ou clientes. Aqui estão algumas práticas recomendadas:</p>
+        <ul>
+            <li><strong>Título chamativo:</strong> Utilize um título claro e persuasivo que destaque o principal benefício do seu produto ou serviço.</li>
+            <li><strong>Design simples e objetivo:</strong> Evite distrações e mantenha o foco no que você deseja que o visitante faça (como preencher um formulário ou clicar em um botão).</li>
+            <li><strong>Call to Action (CTA) forte:</strong> Use CTAs diretos, como "Saiba Mais", "Agende Agora" ou "Garanta Sua Oferta".</li>
+            <li><strong>Provas sociais:</strong> Inclua depoimentos, avaliações ou estudos de caso para aumentar a confiança dos visitantes.</li>
+            <li><strong>Velocidade de carregamento:</strong> Certifique-se de que sua página carrega rapidamente para evitar abandonos.</li>
+        </ul>
+    </div>
 </body>
 </html>
