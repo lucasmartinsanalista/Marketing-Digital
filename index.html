@@ -3,121 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estratégias de Marketing Digital</title>
+    <title>Landing Page Moderna</title>
     <style>
-        /* Reset básico */
+        /* Reset Básico */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
+            background: #f9f9f9;
         }
 
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #007bff;
-            color: #fff;
-            padding: 15px 20px;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 1.5rem;
-        }
-
-        main {
-            padding: 80px 20px 20px;
-        }
-
-        .section {
-            background-color: #fff;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-
-        .section h2 {
-            color: #007bff;
-            margin-bottom: 15px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-            padding-left: 20px;
+        section {
+            padding: 60px 20px;
+            text-align: center;
             position: relative;
         }
 
-        ul li::before {
-            content: "✔";
-            position: absolute;
-            left: 0;
-            color: #007bff;
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        section p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        /* Camada 1 */
+        .layer1 {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        /* Camada 2 */
+        .layer2 {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        /* Divisor */
+        .divider {
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+        }
+
+        .divider .wave {
+            fill: #fff;
+        }
+
+        /* Camada 3 */
+        .layer3 {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: #fff;
         }
 
         /* Responsividade */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.2rem;
+            section h2 {
+                font-size: 1.5rem;
             }
-            .section {
-                padding: 15px;
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Estratégias de Marketing Digital</h1>
-    </header>
+    <!-- Camada 1 -->
+    <section class="layer1">
+        <h2>Bem-vindo à Sua Solução Digital</h2>
+        <p>Descubra como transformar visitantes em clientes com nossas estratégias inovadoras de marketing.</p>
+        <a href="#servicos" class="btn">Saiba Mais</a>
+    </section>
 
-    <main>
-        <div class="section">
-            <h2>Tráfego Pago para Negócios Locais</h2>
-            <p>O tráfego pago é uma estratégia essencial para atrair clientes e aumentar a visibilidade de negócios locais. Campanhas bem estruturadas podem gerar resultados rápidos e mensuráveis, garantindo que seu público-alvo veja sua oferta no momento certo.</p>
-            <ul>
-                <li>Utilize anúncios no <strong>Google Ads</strong> para aparecer em pesquisas relacionadas ao seu negócio.</li>
-                <li>Aproveite as plataformas de redes sociais, como o <strong>Facebook</strong> e o <strong>Instagram</strong>, para alcançar usuários próximos à sua localização.</li>
-                <li>Inclua promoções ou ofertas exclusivas nos seus anúncios para atrair mais engajamento.</li>
-            </ul>
-        </div>
+    <!-- Divisor -->
+    <div class="divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path class="wave" fill="#f9f9f9" d="M0,288L48,288C96,288,192,288,288,272C384,256,480,224,576,192C672,160,768,128,864,106.7C960,85,1056,75,1152,74.7C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
 
-        <div class="section">
-            <h2>Benefícios do Tráfego Pago</h2>
-            <ul>
-                <li><strong>Resultados rápidos:</strong> Diferente de estratégias orgânicas, o tráfego pago pode gerar leads e vendas imediatamente.</li>
-                <li><strong>Segmentação precisa:</strong> Você pode direcionar seus anúncios para públicos específicos com base em localização, idade, interesses e comportamento.</li>
-                <li><strong>Medição de resultados:</strong> Plataformas como Google Ads e Meta Ads oferecem dados detalhados sobre o desempenho das campanhas.</li>
-                <li><strong>Aumento da visibilidade:</strong> Apareça na frente de potenciais clientes mesmo que sua marca ainda seja pouco conhecida.</li>
-            </ul>
-        </div>
+    <!-- Camada 2 -->
+    <section class="layer2" id="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos estratégias personalizadas para negócios locais, garantindo resultados mensuráveis e impactantes.</p>
+        <a href="#contato" class="btn">Entre em Contato</a>
+    </section>
 
-        <div class="section">
-            <h2>Landing Page de Alta Conversão</h2>
-            <p>Uma landing page eficaz é fundamental para converter visitantes em leads ou clientes. Aqui estão algumas práticas recomendadas:</p>
-            <ul>
-                <li><strong>Título chamativo:</strong> Utilize um título claro e persuasivo que destaque o principal benefício do seu produto ou serviço.</li>
-                <li><strong>Design simples e objetivo:</strong> Evite distrações e mantenha o foco no que você deseja que o visitante faça (como preencher um formulário ou clicar em um botão).</li>
-                <li><strong>Call to Action (CTA) forte:</strong> Use CTAs diretos, como "Saiba Mais", "Agende Agora" ou "Garanta Sua Oferta".</li>
-                <li><strong>Provas sociais:</strong> Inclua depoimentos, avaliações ou estudos de caso para aumentar a confiança dos visitantes.</li>
-                <li><strong>Velocidade de carregamento:</strong> Certifique-se de que sua página carrega rapidamente para evitar abandonos.</li>
-            </ul>
-        </div>
-    </main>
+    <!-- Divisor -->
+    <div class="divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path class="wave" fill="#ff758c" d="M0,160L48,160C96,160,192,160,288,165.3C384,171,480,181,576,192C672,203,768,213,864,192C960,171,1056,117,1152,117.3C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+
+    <!-- Camada 3 -->
+    <section class="layer3" id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para descobrir como podemos ajudar seu negócio a crescer.</p>
+        <a href="#top" class="btn">Voltar ao Topo</a>
+    </section>
 </body>
 </html>
