@@ -1,154 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <meta name="description" content="Encontre as mais elegantes joias de prata pura. Perfeitas para mulheres sofisticadas que valorizam a beleza e a qualidade.">
+    <meta name="keywords" content="joias de prata, prata pura, acessórios femininos, elegância, joias premium">
+    <meta name="author" content="Sua Empresa">
+    <title>Joias de Prata Pura - Elegância Feminina</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .layer {
-            margin-bottom: 40px;
-        }
-
-        .layer img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .header {
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-
-        .header h1 {
-            margin: 0;
             color: #333;
+            background-color: #fff5f8;
         }
-
-        .client-feedback {
-            display: flex;
-            gap: 20px;
-            justify-content: space-between;
-        }
-
-        .feedback-item {
+        header {
+            background: linear-gradient(90deg, #f8d7e0, #f5e6eb);
+            padding: 20px;
             text-align: center;
-            flex: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        iframe {
-            width: 100%;
-            height: 500px;
+        header h1 {
+            color: #aa5578;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px;
+        }
+        .cta button {
+            background: #aa5578;
+            color: #fff;
             border: none;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        form input, form textarea, form button {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        form button {
-            background-color: #28a745;
-            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
             cursor: pointer;
-            border: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
-        form button:hover {
-            background-color: #218838;
+        .cta button:hover {
+            background: #923c62;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
-
-        #map {
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-item {
+            text-align: center;
+            max-width: 300px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item img {
             width: 100%;
-            height: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .gallery-item h3 {
+            color: #aa5578;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .gallery-item .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #aa5578;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #aa5578;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        #whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #aa5578;
+            color: #fff;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        #whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        #whatsapp-button img {
+            width: 24px;
+            height: 24px;
+        }
+        #chatbot {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: #fff5f8;
+            border: 1px solid #f8d7e0;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            max-width: 250px;
+        }
+        .banner {
+            background: linear-gradient(90deg, #aa5578, #f5e6eb);
+            color: #aa5578;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .cta button {
+                font-size: 16px;
+            }
+            .gallery {
+                gap: 10px;
+            }
+            #chatbot {
+                font-size: 12px;
+                max-width: 200px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+<header>
+    <h1>Elegância em Cada Detalhe</h1>
+</header>
 
-        <!-- 1ª Camada -->
-        <div class="layer header">
-            <h1>Tenha Resultados Imediatos com Gestão de Tráfego</h1>
-            <img src="foto1.png" alt="Imagem de Gestão de Tráfego">
-        </div>
+<div class="banner">
+    Aproveite 15% de desconto em sua primeira compra!
+</div>
 
-        <!-- 2ª Camada -->
-        <div class="layer client-feedback">
-            <div class="feedback-item">
-                <img src="foto2.png" alt="Foto Cliente 1">
-                <p>"Ótimo serviço! Tivemos um crescimento incrível."</p>
-            </div>
-            <div class="feedback-item">
-                <img src="foto3.png" alt="Foto Cliente 2">
-                <p>"Resultados acima do esperado. Recomendo!"</p>
-            </div>
-            <div class="feedback-item">
-                <img src="foto4.png" alt="Foto Cliente 3">
-                <p>"Estratégias que realmente funcionam. Muito obrigado!"</p>
-            </div>
-        </div>
+<section class="cta">
+    <h2>Compre agora e realce sua beleza com sofisticação</h2>
+    <button>Saiba Mais</button>
+</section>
 
-        <!-- 3ª Camada -->
-        <div class="layer">
-            <iframe src="https://www.youtube.com/embed/bJoi2G15QpA?autoplay=1&mute=0" allow="autoplay"></iframe>
-        </div>
-
-        <!-- 4ª Camada -->
-        <div class="layer">
-            <form>
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Email" required>
-                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-
-        <!-- 5ª Camada -->
-        <div class="layer">
-            <div id="map"></div>
-        </div>
-
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="foto1.png" alt="Joia de prata 1">
+        <h3>Anel de Prata com Design Único</h3>
+        <p class="price">R$ 89,90</p>
     </div>
+    <div class="gallery-item">
+        <img src="foto2.png" alt="Joia de prata 2">
+        <h3>Pulseira Elegante de Prata</h3>
+        <p class="price">R$ 89,90</p>
+    </div>
+    <div class="gallery-item">
+        <img src="foto3.png" alt="Joia de prata 3">
+        <h3>Colar Fino em Prata</h3>
+        <p class="price">R$ 89,90</p>
+    </div>
+    <div class="gallery-item">
+        <img src="foto4.png" alt="Joia de prata 4">
+        <h3>Brincos Modernos de Prata</h3>
+        <p class="price">R$ 89,90</p>
+    </div>
+</div>
 
-    <script>
-        function initMap() {
-            const location = { lat: -19.9766, lng: -44.1986 }; // Coordenadas do Parque das Cachoeiras Cristais
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: location,
-            });
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map,
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+<div id="whatsapp-button" onclick="window.location.href='https://wa.me/553284429071';">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</div>
+
+<div id="chatbot">
+    Olá! Seja bem-vinda! Como posso ajudá-la hoje?
+</div>
+
+<footer>
+    <p>&copy; 2024 Joias de Prata. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
